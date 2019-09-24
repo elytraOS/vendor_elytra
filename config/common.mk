@@ -71,6 +71,11 @@ include vendor/elytra/config/aosp_audio.mk
 # Include ELYTRA audio files
 include vendor/elytra/config/elytra_audio.mk
 
+# Gapps
+ifeq ($(USE_GAPPS),true)
+$(call inherit-product-if-exists, vendor/gms/products/gms.mk)
+endif
+
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
@@ -84,7 +89,8 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # Config
 PRODUCT_PACKAGES += \
-    SimpleDeviceConfig
+    SimpleDeviceConfig \
+    SettingsIntelligenceGooglePrebuilt
 
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -93,6 +99,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # These packages are excluded from user builds
 PRODUCT_PACKAGES_DEBUG += \
     procmem
+
+# Permissions
+PRODUCT_COPY_FILES += \
+    vendor/elytra/config/permissions/privapp-permissions-elytra-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-elytra.xml
 
 # Root
 PRODUCT_PACKAGES += \
