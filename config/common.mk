@@ -95,6 +95,10 @@ endif
 # Bootanimation
 include vendor/elytra/config/bootanimation.mk
 
+# Charger
+PRODUCT_PACKAGES += \
+    product_charger_res_images
+
 # Config
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig \
