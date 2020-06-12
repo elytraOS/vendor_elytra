@@ -81,6 +81,10 @@ PRODUCT_BOOT_JARS += \
     tcmiface \
     telephony-ext
 
+# Wallpapers
+PRODUCT_PACKAGES += \
+    Covers
+
 # WiFi
 PRODUCT_PACKAGES += \
     libwpa_client
