@@ -7,6 +7,7 @@
 # Overlays
 PRODUCT_PACKAGES += \
     ElytraFrameworksOverlay \
+    ElytraImmersiveNavigationOverlay \
     ElytraSettingsOverlay \
     ElytraSettingsProviderOverlay \
     ElytraSystemUIOverlay \
