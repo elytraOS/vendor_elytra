@@ -1,0 +1,2 @@
+# elytraOS Power HAL
+vendor.elytra.power.IPowerFeature/default    u:object_r:hal_power_service:s0

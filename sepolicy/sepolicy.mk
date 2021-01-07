@@ -9,3 +9,6 @@ PRODUCT_PRIVATE_SEPOLICY_DIRS += \
 
 PRODUCT_PUBLIC_SEPOLICY_DIRS += \
     vendor/elytra/sepolicy/public
+
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    vendor/elytra/sepolicy/vendor

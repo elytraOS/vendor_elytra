@@ -1,0 +1,10 @@
+#
+# Copyright (C) 2022 elytraOS
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+service vendor.power-elytra /vendor/bin/hw/vendor.elytra.power-service
+    class hal
+    user system
+    group system input
