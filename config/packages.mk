@@ -2,7 +2,8 @@
 PRODUCT_PACKAGES += \
     QKSMS \
     Terminal \
-    ThemePicker
+    ThemePicker \
+    TouchGestures
 
 # Extra tools in elytra
 PRODUCT_PACKAGES += \
