@@ -140,6 +140,8 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/bin/procmem
 endif
 
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/elytra/config/device_framework_matrix.xml
+
 # Root
 PRODUCT_PACKAGES += \
     adb_root
@@ -152,7 +154,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 -include vendor/elytra/config/partner_gms.mk
 
 # Inherit from rro_overlays config
-$(call inherit-product, vendor/elytra/config/rro_overlays.mk) 
+$(call inherit-product, vendor/elytra/config/rro_overlays.mk)
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/elytra/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/elytra/overlay/common
