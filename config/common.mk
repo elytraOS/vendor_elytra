@@ -168,7 +168,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 $(call inherit-product, vendor/elytra/config/rro_overlays.mk)
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/elytra/overlay
-DEVICE_PACKAGE_OVERLAYS += vendor/elytra/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/elytra/overlay/common
 
 # Versioning
 include vendor/elytra/config/version.mk
