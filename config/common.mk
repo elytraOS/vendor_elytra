@@ -56,6 +56,11 @@ PRODUCT_COPY_FILES += \
     vendor/elytra/prebuilt/common/etc/init/init.lineage-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.lineage-updater.rc \
     vendor/elytra/prebuilt/common/etc/init/init.openssh.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.openssh.rc
 
+# Blurs
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.sf.blurs_are_expensive=1 \
+    ro.surface_flinger.supports_background_blur=1
+
 # Disable blur on app-launch
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.launcher.blur.appLaunch=0
