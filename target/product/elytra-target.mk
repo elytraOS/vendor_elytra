@@ -29,3 +29,8 @@ $(call inherit-product, vendor/elytra/target/product/properties.mk)
 
 # Move Wi-Fi modules to vendor
 PRODUCT_VENDOR_MOVE_ENABLED := true
+
+# Permissions
+PRODUCT_COPY_FILES += \
+    vendor/elytra/target/config/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
+    vendor/elytra/target/config/permissions/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
