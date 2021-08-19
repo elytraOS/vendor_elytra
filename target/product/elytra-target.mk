@@ -21,6 +21,9 @@ $(call inherit-product, vendor/google/gms/config.mk)
 $(call inherit-product-if-exists, vendor/google/modules/build/mainline_modules_s.mk)
 $(call inherit-product, vendor/google/pixel/config.mk)
 
+# Include Packages makefile
+$(call inherit-product, vendor/elytra/target/product/packages.mk)
+
 # Include Properties makefile
 $(call inherit-product, vendor/elytra/target/product/properties.mk)
 
