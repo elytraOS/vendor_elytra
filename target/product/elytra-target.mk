@@ -10,6 +10,9 @@ $(call inherit-product, vendor/elytra/target/product/version.mk)
 # Don't dexpreopt prebuilts. (For GMS).
 DONT_DEXPREOPT_PREBUILTS := true
 
+# Filesystem
+TARGET_FS_CONFIG_GEN += vendor/elytra/target/config/config.fs
+
 # Include Common Qualcomm Device Tree
 $(call inherit-product, device/qcom/common/common.mk)
 
