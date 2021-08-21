@@ -13,3 +13,6 @@ include device/qcom/common/BoardConfigQcom.mk
 
 # Kernel configuration.
 include vendor/elytra/target/board/BoardConfigKernel.mk
+
+# Soong
+include vendor/elytra/target/board/BoardConfigSoong.mk
