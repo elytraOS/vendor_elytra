@@ -36,6 +36,9 @@ $(call inherit-product, vendor/elytra/target/product/packages.mk)
 # Include Properties makefile
 $(call inherit-product, vendor/elytra/target/product/properties.mk)
 
+# Include SEPolicy makefile.
+$(call inherit-product, vendor/elytra/sepolicy/sepolicy.mk)
+
 # Move Wi-Fi modules to vendor
 PRODUCT_VENDOR_MOVE_ENABLED := true
 
