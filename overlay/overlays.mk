@@ -6,4 +6,5 @@
 
 # Overlays
 PRODUCT_PACKAGES += \
-    ElytraFrameworksOverlay
+    ElytraFrameworksOverlay \
+    ElytraSystemUIOverlay
