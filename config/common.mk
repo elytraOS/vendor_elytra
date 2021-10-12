@@ -121,10 +121,12 @@ PRODUCT_COPY_FILES += \
     vendor/elytra/prebuilt/common/etc/sysconfig/lily_experience.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/lily_experience.xml
 
 # Include AOSP audio files
+ifneq ($(USE_GAPPS),true)
 include vendor/elytra/config/aosp_audio.mk
 
 # Include Elytra audio files
 include vendor/elytra/config/elytra_audio.mk
+endif
 
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
