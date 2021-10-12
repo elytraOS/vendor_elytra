@@ -128,5 +128,8 @@ include vendor/elytra/config/version.mk
 # BootAnimation
 include vendor/elytra/config/bootanimation.mk
 
+# Fonts
+$(call inherit-product, vendor/elytra/fonts/fonts.mk)
+
 # Include extra packages
 include vendor/elytra/config/packages.mk
