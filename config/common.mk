@@ -58,6 +58,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.launcher.blur.appLaunch=0
 
+# Enable dex2oat64 to do dexopt
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    dalvik.vm.dex2oat64.enabled=true
+
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
     vendor/elytra/config/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.software.nfc.beam.xml
