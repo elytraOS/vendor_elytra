@@ -7,5 +7,7 @@
 # Overlays
 PRODUCT_PACKAGES += \
     ElytraFrameworksOverlay \
+    ElytraSettingsProviderOverlay \
     ElytraSystemUIOverlay \
     ElytraLauncherOverlay
+
