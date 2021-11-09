@@ -32,6 +32,7 @@ SOONG_CONFIG_elytraGlobalVars += \
     bootloader_message_offset \
     disable_postrender_cleanup \
     camera_needs_client_info \
+    camera_needs_client_info_lib \
     has_legacy_camera_hal1 \
     has_memfd_backport \
     ignores_ftp_pptp_conntrack_failure \
@@ -82,6 +83,7 @@ SOONG_CONFIG_elytraQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PR
 SOONG_CONFIG_elytraQcomVars_uses_qcom_bsp_legacy := $(TARGET_USES_QCOM_BSP_LEGACY)
 SOONG_CONFIG_elytraQcomVars_uses_qti_camera_device := $(TARGET_USES_QTI_CAMERA_DEVICE)
 SOONG_CONFIG_elytraGlobalVars_camera_needs_client_info := $(TARGET_CAMERA_NEEDS_CLIENT_INFO)
+SOONG_CONFIG_elytraGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB)
 
 # Set default values
 BOOTLOADER_MESSAGE_OFFSET ?= 0
