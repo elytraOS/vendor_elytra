@@ -69,12 +69,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=log
 
-# Include AOSP audio files
-include vendor/elytra/config/aosp_audio.mk
-
-# Include ELYTRA audio files
-include vendor/elytra/config/elytra_audio.mk
-
 # Gapps
 ifeq ($(USE_GAPPS),true)
 $(call inherit-product-if-exists, vendor/gms/products/gms.mk)
