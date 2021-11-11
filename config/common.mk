@@ -112,7 +112,7 @@ DEVICE_PACKAGE_OVERLAYS += vendor/elytra/overlay/common
 include vendor/elytra/config/version.mk
 
 # BootAnimation
--include vendor/elytra/config/bootanimation.mk
+include vendor/elytra/config/bootanimation.mk
 
 # Include extra packages
 include vendor/elytra/config/packages.mk
