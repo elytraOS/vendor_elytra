@@ -67,7 +67,7 @@ PRODUCT_COPY_FILES += \
 
 # Enforce privapp-permissions whitelist
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.control_privapp_permissions=log
+    ro.control_privapp_permissions=enforce
 
 # Gapps
 ifeq ($(USE_GAPPS),true)
