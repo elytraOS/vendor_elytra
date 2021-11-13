@@ -15,9 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/elytra_arm64.mk \
-    $(LOCAL_DIR)/elytra_arm64_ab.mk \
+    $(LOCAL_DIR)/elytra_arm64.mk
 
 COMMON_LUNCH_CHOICES := \
-    elytra_arm64-userdebug \
-    elytra_arm64_ab-userdebug \
+    elytra_arm64-userdebug
