@@ -20,3 +20,6 @@ include vendor/elytra/build/target/product/elytra_generic_target.mk
 TARGET_NO_KERNEL_OVERRIDE := true
 
 PRODUCT_NAME := elytra_arm64
+
+# Enable mainline checking
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := relaxed
