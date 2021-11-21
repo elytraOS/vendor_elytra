@@ -238,6 +238,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     ElytraLauncherOverlay \
+    CustomPixelLauncherOverlay \
     NetworkStackOverlay
 
 include vendor/elytra/config/branding.mk
