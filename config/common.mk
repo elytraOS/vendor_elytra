@@ -148,6 +148,9 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/elytra/config/partner_gms.mk
 
+# Inherit from rro_overlays config
+$(call inherit-product, vendor/elytra/config/rro_overlays.mk) 
+
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/elytra/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/elytra/overlay/common
 
