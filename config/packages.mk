@@ -1,5 +1,6 @@
 # elytraOS packages
 PRODUCT_PACKAGES += \
+    QKSMS \
     Terminal \
     ThemePicker
 
