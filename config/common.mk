@@ -86,6 +86,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.ime.kb_pad_land_l=64 \
     ro.com.google.ime.kb_pad_land_r=64
 
+# Fonts
+include vendor/elytra/config/fonts.mk
+
 # Include AOSP audio files
 include vendor/elytra/config/aosp_audio.mk
 
