@@ -1,6 +1,9 @@
 # elytraOS packages
+ifeq ($(USE_GAPPS),false)
 PRODUCT_PACKAGES += \
-    QKSMS \
+    QKSMS
+endif
+PRODUCT_PACKAGES += \
     Terminal \
     ThemePicker \
     TouchGestures
