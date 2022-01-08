@@ -192,6 +192,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/elytra/overlay/common
 
 PRODUCT_PACKAGES += \
+    AndroidBlackThemeOverlay \
     DocumentsUIOverlay \
     NetworkStackOverlay
 
