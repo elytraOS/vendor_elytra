@@ -8,6 +8,10 @@ PRODUCT_PACKAGES += \
     ThemePicker \
     TouchGestures
 
+# Camera
+PRODUCT_PACKAGES += \
+    GoogleCameraGo
+
 # Extra tools in elytra
 PRODUCT_PACKAGES += \
     7z \
