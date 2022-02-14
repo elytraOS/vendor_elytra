@@ -1,0 +1,12 @@
+//
+// Copyright (C) 2022 elytraOS
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+android_app_import {
+    apk: "GoogleCameraGo.apk",
+    name: "GoogleCameraGo",
+    overrides: ["Camera2"],
+    presigned: true,
+    product_specific: true,
+}

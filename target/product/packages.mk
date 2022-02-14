@@ -11,6 +11,10 @@ PRODUCT_PACKAGES += \
     otapreopt_script
 endif
 
+# Camera
+PRODUCT_PACKAGES += \
+    GoogleCameraGo
+
 # Curl
 PRODUCT_PACKAGES += \
     curl
