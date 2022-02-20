@@ -13,6 +13,11 @@ PRODUCT_PACKAGES += \
     GoogleCameraGo
 
 # Extra tools in elytra
+ifneq ($(USE_GAPPS),true)
+PRODUCT_PACKAGES += \
+    GmsCompat
+endif
+
 PRODUCT_PACKAGES += \
     7z \
     awk \
