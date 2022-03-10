@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ANDROID_VERSION := 12.0
-ELYTRAVERSION := SKYLIGHT
+ANDROID_VERSION := 12.1
+ELYTRAVERSION := ENDSTONE
 
 ELYTRA_BUILD_TYPE ?= UNOFFICIAL
 ELYTRA_DATE_YEAR := $(shell date -u +%Y)
