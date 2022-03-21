@@ -716,9 +716,7 @@ function elytrarebase() {
     cd $pwd
 }
 
-function mka() {
-    m -j "$@"
-}
+alias mka=m
 
 function cmka() {
     if [ ! -z "$1" ]; then
