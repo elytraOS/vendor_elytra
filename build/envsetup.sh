@@ -717,7 +717,7 @@ function elytrarebase() {
 }
 
 function mka() {
-    m
+    m "$@"
 }
 
 function cmka() {
