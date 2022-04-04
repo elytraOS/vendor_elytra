@@ -73,6 +73,10 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     dalvik.vm.dex2oat64.enabled=true
 
+# Disable remote keyguard animation
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.wm.enable_remote_keyguard_animation=0
+
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
     vendor/elytra/config/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.software.nfc.beam.xml
