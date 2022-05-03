@@ -112,6 +112,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Optimize everything for preopt
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 
+# Include AOSP audio files
+include vendor/elytra/config/aosp_audio.mk
+
+# Include elytra audio files
+include vendor/elytra/config/elytra_audio.mk
+
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
@@ -177,9 +183,6 @@ include vendor/elytra/config/bootanimation.mk
 
 # Fonts
 $(call inherit-product, vendor/elytra/fonts/fonts.mk)
-
-# Audio
-$(call inherit-product, vendor/elytra/audio/audio.mk)
 
 # Include extra packages
 include vendor/elytra/config/packages.mk

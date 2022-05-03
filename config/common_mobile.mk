@@ -1,7 +1,14 @@
 # Inherit common mobile elytra stuff
 $(call inherit-product, vendor/elytra/config/common.mk)
 
-# AOSP packages
+ifneq ($(USE_GAPPS),true)
+# Default notification/alarm sounds
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.config.notification_sound=Argon.ogg \
+    ro.config.alarm_alert=Hassium.ogg
+endif
+
+# Apps
 PRODUCT_PACKAGES += \
     Email \
     ExactCalculator \
