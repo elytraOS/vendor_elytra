@@ -13,6 +13,11 @@ $(call inherit-product, vendor/elytra/bootanimation/bootanimation.mk)
 # Don't dexpreopt prebuilts. (For GMS).
 DONT_DEXPREOPT_PREBUILTS := true
 
+# Fonts
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,vendor/elytra/prebuilts/fonts/,$(TARGET_COPY_OUT_PRODUCT)/fonts) \
+    vendor/elytra/target/config/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
+
 # Filesystem
 TARGET_FS_CONFIG_GEN += vendor/elytra/target/config/config.fs
 

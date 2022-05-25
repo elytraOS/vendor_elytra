@@ -11,4 +11,10 @@ PRODUCT_PACKAGES += \
     ElytraSettingsOverlay \
     ElytraSettingsProviderOverlay \
     ElytraSystemUIOverlay \
-    ElytraLauncherOverlay
+    ElytraLauncherOverlay \
+    FontGoogleSansLatoOverlay \
+    FontHarmonySansOverlay \
+    FontInterOverlay \
+    FontManropeOverlay \
+    FontRobotoOverlay \
+    FontUrbanistOverlay
