@@ -29,7 +29,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-custom_local_manifest = ".repo/local_manifests/wings/elytra.xml"
+custom_local_manifest = ".repo/local_manifests/elytra.xml"
 custom_default_revision = "scorch"
 custom_dependencies = "elytra.dependencies"
 org_manifest = "elytra"  # leave empty if org is provided in manifest
