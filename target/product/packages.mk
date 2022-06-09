@@ -38,11 +38,6 @@ PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti.vendor \
     libqti_vndfwk_detect.vendor
 
-# Telephony - AOSP
-PRODUCT_PACKAGES += \
-    CellBroadcastReceiver \
-    Stk
-
 # Telephony - CLO
 PRODUCT_PACKAGES += \
     extphonelib \
