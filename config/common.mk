@@ -106,6 +106,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Fonts
 include vendor/elytra/config/fonts.mk
 
+# Google LILY_EXPERIENCE feature
+PRODUCT_COPY_FILES += \
+    vendor/elytra/prebuilt/common/etc/sysconfig/lily_experience.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/lily_experience.xml
+
 # Include AOSP audio files
 include vendor/elytra/config/aosp_audio.mk
 
