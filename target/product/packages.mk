@@ -4,6 +4,13 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# A/B OTA Optimization
+ifneq ($(AB_OTA_PARTITIONS),)
+PRODUCT_PACKAGES += \
+    checkpoint_gc \
+    otapreopt_script
+endif
+
 # Curl
 PRODUCT_PACKAGES += \
     curl
