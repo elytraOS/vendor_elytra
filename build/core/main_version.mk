@@ -4,22 +4,22 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 endif
 
-# LineageOS System Version
+ifeq ($(USE_GAPPS),true)
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.version=$(LINEAGE_VERSION) \
-    ro.lineage.releasetype=$(LINEAGE_BUILDTYPE) \
-    ro.lineage.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
-    ro.modversion=$(LINEAGE_VERSION) \
-    ro.lineagelegal.url=https://lineageos.org/legal
+    ro.elytra.ziptype=gapps
+else
+ADDITIONAL_SYSTEM_PROPERTIES += \
+    ro.elytra.ziptype=vanilla
+endif
 
-# LineageOS Platform Display Version
+# ElytraOS Platform Display Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.display.version=$(LINEAGE_DISPLAY_VERSION)
-
-# LineageOS Platform SDK Version
-ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.build.version.plat.sdk=$(LINEAGE_PLATFORM_SDK_VERSION)
-
-# LineageOS Platform Internal Version
-ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.build.version.plat.rev=$(LINEAGE_PLATFORM_REV)
+    ro.elytra.display.version=$(ELYTRA_DISPLAY_VERSION) \
+    ro.elytra.build.version=$(ELYTRA_BUILD_VERSION) \
+    ro.elytra.build.date=$(BUILD_DATE) \
+    ro.elytra.buildtype=$(ELYTRA_BUILD_TYPE) \
+    ro.elytra.fingerprint=$(ROM_FINGERPRINT) \
+    ro.elytra.version=$(ELYTRA_VERSION) \
+    ro.elytra.base.codename=$(ELYTRA_CODENAME) \
+    ro.elytra.base.version=$(ELYTRA_NUM_VER) \
+    ro.modversion=$(ELYTRA_VERSION)

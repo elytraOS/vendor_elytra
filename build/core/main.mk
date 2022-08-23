@@ -1,2 +1,2 @@
-# Include LineageOS versions
-include $(TOPDIR)vendor/lineage/build/core/main_version.mk
+# Include ElytraOS versions
+include $(TOPDIR)vendor/elytra/build/core/main_version.mk

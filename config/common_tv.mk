@@ -1,15 +1,15 @@
-# Inherit common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common.mk)
+# Inherit common Elytra stuff
+$(call inherit-product, vendor/elytra/config/common.mk)
 
-# Inherit Lineage atv device tree
-$(call inherit-product, device/lineage/atv/lineage_atv.mk)
+# Inherit Elytra atv device tree
+$(call inherit-product, device/elytra/atv/elytra_atv.mk)
 
 # AOSP packages
 PRODUCT_PACKAGES += \
     LeanbackIME
 
-# Lineage packages
+# Elytra packages
 PRODUCT_PACKAGES += \
     LineageCustomizer
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/lineage/overlay/tv
+PRODUCT_PACKAGE_OVERLAYS += vendor/elytra/overlay/tv
