@@ -28,7 +28,7 @@ PRODUCT_PACKAGES += \
 
 # Theme Picker
 PRODUCT_PACKAGES += \
-    ThemePicker
+    ElytraThemePicker
 
 # Gestures
 PRODUCT_PACKAGES += \
