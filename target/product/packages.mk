@@ -15,6 +15,11 @@ endif
 PRODUCT_PACKAGES += \
     curl
 
+# Exfat FS
+PRODUCT_PACKAGES += \
+    fsck.exfat \
+    mkfs.exfat
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
