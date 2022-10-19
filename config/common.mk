@@ -241,11 +241,7 @@ endif
 # Dex/ART optimization
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings \
-    Dialer \
-    Contacts \
-    DeskClock \
-    messaging \
-    Eleven \
+    Launcher3QuickStep \
     SystemUI
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
