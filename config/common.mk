@@ -258,6 +258,11 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
 
+ifeq ($(TARGET_DISABLE_GRALLOC2_P010_SUPPORT), true)
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.gralloc.disablep010?=true
+endif
+
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     vendor/elytra/overlay \
     vendor/elytra/overlay/no-rro
