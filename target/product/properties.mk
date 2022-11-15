@@ -35,3 +35,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Increase volume level steps
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.config.media_vol_steps=30
+
+# GMS spoofing fingerprint
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.build.gms_fingerprint=google/angler/angler:6.0/MDB08L/2343525:user/release-keys
