@@ -39,6 +39,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ElytraThemePicker
 
+# Elytra SystemUI
+PRODUCT_PACKAGES += \
+    ElytraSystemUI
+
 # Gestures
 PRODUCT_PACKAGES += \
     vendor.elytra.power-service

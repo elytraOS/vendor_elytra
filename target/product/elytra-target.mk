@@ -61,7 +61,7 @@ PRODUCT_COPY_FILES += \
 
 # Pre-optimization
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI
+    ElytraSystemUI
 
 # Compile SystemUI on device with `speed`.
 PRODUCT_PROPERTY_OVERRIDES += \
