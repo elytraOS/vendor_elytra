@@ -25,6 +25,10 @@ $(call inherit-product, vendor/elytra/bootanimation/bootanimation.mk)
 PRODUCT_PACKAGES += \
     GoogleCameraGo
 
+# Charger
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.charger.enable_suspend=1
+
 # Curl
 PRODUCT_PACKAGES += \
     curl
